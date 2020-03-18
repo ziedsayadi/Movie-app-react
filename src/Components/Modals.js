@@ -51,7 +51,7 @@ addNewMovie=()=>{
         </Button>
         <Modal className="Modal-content" show={this.state.show} onHide={this.handleShow} animation={false}>
           <Modal.Header style={{background: "#D8DEDE"}} closeButton>
-            <Modal.Title style={{marginLeft: "25%"}}>Incert New Movie</Modal.Title>
+            <Modal.Title style={{marginLeft: "25%"}}>Insert New Movie</Modal.Title>
           </Modal.Header>
 
           <Modal.Body className="Modal-input" >
@@ -65,12 +65,15 @@ addNewMovie=()=>{
               <input className="rating-input input" placeholder=" " name='rating' type='text'  onChange={this.moviRate}/>
 
               
-            </form>
+              </form>
           </Modal.Body>
-          <Modal.Footer style={{background: "#D8DEDE"}} >
-            <Button style={{marginRight: "45%"}} classNmae="Submit-button" variant="primary" type="submit" onClick={()=>this.props.addmovie(this.state.movieUrl,this.state.newMovie,this.state.movierate)}>
+          <Modal.Footer>
+            <Button variant="secondary" onClick={this.handleShow}>
+              Close
+            </Button>
+            <Button variant="primary" onClick={()=>this.props.addmovie(this.state.movieUrl,this.state.newMovie,this.state.movierate)}>
 
-              Submit
+              Save Changes
             </Button>
           </Modal.Footer>
         </Modal>

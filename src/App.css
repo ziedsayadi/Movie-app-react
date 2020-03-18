@@ -30,7 +30,7 @@ p{
   margin-top: 10px;
   max-width: 250px;
   margin-left: 10px;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 500;
   color: rgba(255, 255, 255, 0.712);
 }
@@ -48,6 +48,7 @@ label{
   max-width:256px;
   background-color: #5b6467;
   background-image: linear-gradient(315deg, #5b6467 0%, #8b939a 74%);  
+  margin-left: 4%;
 }
 .container:hover{
   cursor: pointer;
@@ -67,18 +68,19 @@ box-shadow: 15px 10px 7px 1px rgba(0,0,0,0.54);
   width: 100%;
   padding-left: 30px;
   background-color: #2d3436;
-  background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
+  background-image:linear-gradient(315deg, #dc3545 0%, #000000 74%)
  
 }
 .Searchmovie{
   width: 60%;
   margin-left: 10%;
   height: 45px;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 500;
   font-family: 'Times New Roman', Times, serif;
-border-radius: 5px;
-margin-top: 15px;
+  border-radius: 8px;
+  margin-top: 15px;
+  color:grey;
 }
 .Button-search{
   height: 42px;
@@ -89,8 +91,9 @@ margin-top: 15px;
 .SearchStars{
   font-size: large;
   margin-left: 15px;
-  color: white;
+  color:white;
   font-weight: 500;
+  font-family: cursive;
 }
 /*Modal*/
 .Modal-cont{
@@ -126,10 +129,13 @@ label.fname{
   
 }
 .input{
-  margin-left: 12%;
+  margin-left: 8%;
   width: 25vw;
   border-radius: 5px;
   height: 40px;
   background-color: #D8DEDE;
   font-size: 15px;
+}
+.title-input{
+  padding-right: 15px;
 }

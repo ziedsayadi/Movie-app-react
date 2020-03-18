@@ -5,6 +5,7 @@ import Search from './Search'
 import Modals from "./Modals";
 
 
+
  class MovieList extends Component {
     state={
     movies,
@@ -47,10 +48,10 @@ import Modals from "./Modals";
 
 
     render() {
-      /*console.log("sdfsdfsdfsd:" , this.state.movies)*/
+    
 
       const listsearch =this.state.movies.filter(el =>(el.title.toUpperCase().includes(this.state.search.toUpperCase()))).filter(el=>el.rating>=this.state.index);
-      //console.log("sssssssssssss:" , listsearch)
+    
   
         return (
           <>
